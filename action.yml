@@ -1,0 +1,21 @@
+# Currently experimental.
+name: 'vul-scanner'
+description: 'Scans your directory against the OSV database (Experimental)'
+inputs:
+  to-scan:
+    description: 'Directory to scan'
+    required: true
+    default: '/github/workspace'
+  version:
+    description: 'vul-scanner version to use'
+    required: true
+  arch:
+    description: 'vul-scanner architecture'
+    required: false
+    default: 'amd64'
+runs:
+  using: 'docker'
+  image: 'ghcr.io/CVEDB/vul-scanner:${{ inputs.version }}-${{ inputs.arch }}'
+  args:
+    - '--skip-git'
+    - ${{ inputs.to-scan }}
