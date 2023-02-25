@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/CVEDB/vul-scanner/internal/output"
-	"github.com/CVEDB/vul-scanner/pkg/vulscanner"
+	"github.com/CVEDB/vul-scanner/pkg/osvscanner"
 
 	"github.com/urfave/cli/v2"
 )
