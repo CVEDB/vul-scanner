@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/CVEDB/go-cmp/cmp"
+	"github.com/google/go-cmp/cmp"
 )
 
 type testStruct struct {
