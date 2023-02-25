@@ -3,7 +3,7 @@ package grouper
 import (
 	"testing"
 
-	"github.com/CVEDB/go-cmp/cmp"
+	"github.com/google/go-cmp/cmp"
 	"github.com/CVEDB/vul-scanner/pkg/models"
 )
 
