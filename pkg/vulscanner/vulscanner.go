@@ -1,4 +1,4 @@
-package osvscanner
+package vulscanner
 
 import (
 	"bufio"
